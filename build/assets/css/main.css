@@ -630,8 +630,7 @@ section {
 
 .btn {
   font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 0.05em;
+  font-weight: 400;
   padding: 12px 28px;
   background-color: #006f7f;
   color: #FFF;
@@ -686,8 +685,7 @@ section {
       position: relative;
       font-size: 16px;
       line-height: 44px;
-      font-weight: 900;
-      letter-spacing: 0.05em;
+      font-weight: 400;
       width: 180px;
       height: 44px;
       -webkit-transition: all 0.3s;
@@ -865,14 +863,16 @@ h1 {
   height: 44px;
   padding-left: 10px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 400;
   color: #006f7f;
   border: 2px solid currentColor;
   outline: none; }
 
 .form__btn {
   width: 100%;
-  padding: 9px 0; }
+  padding: 9px 0;
+  -webkit-appearance: none;
+  border-radius: 0; }
 
 ::-webkit-input-placeholder {
   color: #006f7f;
@@ -943,10 +943,25 @@ footer {
   .about-h2 {
     margin: 50px 0 30px; }
   .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    min-height: auto;
     margin-bottom: 50px; }
+    .about .row {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
   .fullwidth-img {
     margin: 50px 0 40px; }
   .img-r-5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin-top: 20px; }
   .contact-sec__subtitle {
     display: block;
