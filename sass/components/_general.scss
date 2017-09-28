@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "Resphekt";
+	src: url("../../../fonts/resphekt/Resphekt.eot");
+	src:
+		 url("../../../fonts/resphekt/Resphekt.woff") format("woff"),
+         url("../../../fonts/resphekt/Resphekt.ttf") format("truetype"),
+         url("../../../fonts/resphekt/Resphekt.svg") format("svg");
+	font-weight: 400;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../../../fonts/lato/heavy/lato-heavy-webfont.eot");
+    src:
+         url("../../../fonts/lato/heavy/lato-heavy-webfont.woff") format("woff"),
+         url("../../../fonts/lato/heavy/lato-heavy-webfont.ttf") format("truetype"),
+         url("../../../fonts/lato/heavy/lato-heavy-webfont.svg") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../../../fonts/lato/regular/lato-regular-webfont.eot");
+    src:
+         url("../../../fonts/lato/regular/lato-regular-webfont.woff") format("woff"),
+         url("../../../fonts/lato/regular/lato-regular-webfont.ttf") format("truetype"),
+         url("../../../fonts/lato/regular/lato-regular-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+$m-font : "Lato";
+$s-font : "Resphekt";
+$color1: #006f7f;
+$color2: #303030;
+
+//general
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+	font-family: $m-font;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 36px;
+	color: $color1;
+	font-weight: 900;
+}
+h3 {
+	margin-bottom: 30px;
+	font-size: 36px;
+	font-family: $s-font;
+	font-weight: 400;
+}
+section {
+	position: relative;
+}
+.h3--colored {
+	color: $color1;
+}
+.img {
+	position: absolute;
+	top: 0;
+}
+.bgimg {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.btn {
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.05em;
+	padding: 12px 28px;
+	background-color: $color1;
+	color: #FFF;
+	transition: all 0.3s;
+	border: 2px solid $color1;
+	cursor: pointer;	
+	box-shadow: 0px 3px 9.6px 0.4px rgba(0, 0, 0, 0.1);
+	&:hover {
+		box-shadow: 0px 3px 9.6px 0.4px rgba(0, 0, 0, 0.35);
+		background-color: #008093;
+		border: 2px solid #008093;
+	}
+	&:active {
+		box-shadow: 0px 3px 4.8px 0.2px rgba(0, 0, 0, 0.4);
+		background-color: #006371;
+		border: 2px solid #006371;
+	}
+}
+
+.text {
+	margin-bottom: 25px;
+	font-size: 16px;
+	color: $color2;
+	line-height: 1.25;
+	
+}
+.img-l-7 {
+	right: 42.5%;
+}
+.img-l-5 {
+	right: 59.5%;
+}
+.img-r-5 {
+	left: 59.5%;
+}
